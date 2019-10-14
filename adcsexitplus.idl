@@ -1,0 +1,53 @@
+//+--------------------------------------------------------------------------
+//
+// THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF
+// ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+// THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
+// PARTICULAR PURPOSE.
+//
+// Copyright (c) Microsoft Corporation. All rights reserved
+// AGPLv3 2017 Martino Dell'Ambrogio
+//
+// File:        adcsexitplus.idl
+//
+// Contents:    IDL source for adcsexitplus
+//
+//---------------------------------------------------------------------------
+
+import "wtypes.idl";
+import "certexit.idl";
+import "certmod.idl";
+
+
+//+--------------------------------------------------------------------------
+// certexit Type library
+//+--------------------------------------------------------------------------
+
+[
+    uuid(98a8cfd7-f40a-440f-a20b-c994f5abf1f6),
+    version(1.0),
+    helpstring("CertExitPlus 1.0 Type Library")
+]
+
+library CERTEXITPLUSLib
+{
+    importlib("stdole2.tlb");
+
+    [
+	uuid(1e685868-8ed2-4bf3-87b2-c31b524402cc),
+	helpstring("CertExitPlus Class")
+    ]
+    coclass CCertExitPlus
+    {
+	[default] interface ICertExit;
+    };
+
+    [
+	uuid(cc1480c9-c452-4628-9cc9-568de4270c71),
+	helpstring("CertManageExitModulePlus Class")
+    ]
+    coclass CCertManageExitModulePlus
+    {
+	[default] interface ICertManageModule;
+    };
+};

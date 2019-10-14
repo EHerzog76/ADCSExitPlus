@@ -1,0 +1,18 @@
+;+-------------------------------------------------------------------------
+;
+;  Microsoft Windows
+;
+;  Copyright (C) Microsoft Corporation, 1997 - 1999
+;  AGPLv3 2017 Martino Dell'Ambrogio
+;
+;  File:       adcsexitplus.def
+;
+;--------------------------------------------------------------------------
+
+LIBRARY
+
+EXPORTS
+    DllCanUnloadNow     PRIVATE
+    DllGetClassObject   PRIVATE
+    DllRegisterServer   PRIVATE
+    DllUnregisterServer PRIVATE
